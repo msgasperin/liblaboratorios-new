@@ -1,0 +1,204 @@
+:root {
+   --lib-primary: #1C307E;
+   --lib-dark: #152460;
+   --lib-accent: #FBB635;
+   --lib-light: #F8FAFC;
+}
+
+/* Hero / Header principal */
+.cardio-hero {
+   background: linear-gradient(135deg, var(--lib-primary) 0%, var(--lib-dark) 100%);
+   color: #ffffff;
+   border-bottom: 4px solid var(--lib-accent);
+}
+
+.badge-medical-light {
+   background-color: rgba(255, 255, 255, 0.15);
+   color: #ffffff;
+   border: 1px solid rgba(255, 255, 255, 0.25);
+   font-weight: 600;
+   letter-spacing: 0.5px;
+}
+
+/* Tarjetas de Servicios y Precios */
+.card-service {
+   border: 1px solid #E2E8F0;
+   border-radius: 16px;
+   transition: all 0.25s ease-in-out;
+   background-color: #ffffff;
+}
+
+.card-service:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 12px 24px rgba(28, 48, 126, 0.12) !important;
+   border-color: rgba(28, 48, 126, 0.3);
+}
+
+.icon-box-service {
+   width: 44px;
+   height: 44px;
+   border-radius: 12px;
+   background-color: rgba(28, 48, 126, 0.08);
+   color: var(--lib-primary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.25rem;
+   flex-shrink: 0;
+}
+
+.price-tag {
+   color: var(--lib-primary);
+   font-weight: 800;
+}
+
+/* Tarjeta Lateral de Cita */
+.card-appointment {
+   border: 1px solid rgba(28, 48, 126, 0.1);
+   border-radius: 16px;
+   overflow: hidden;
+   background-color: #ffffff;
+}
+
+/* Perfil del Especialista */
+.doctor-img-container {
+   position: relative;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+   border: 4px solid #ffffff;
+}
+
+.border-left-medical {
+   border-left: 4px solid var(--lib-primary) !important;
+}
+
+/* Banners / Paquetes */
+.package-thumb {
+   border-radius: 14px;
+   overflow: hidden;
+   border: 1px solid #E2E8F0;
+   transition: all 0.25s ease;
+   background-color: #ffffff;
+   display: block;
+}
+
+.package-thumb:hover {
+   transform: scale(1.03);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+   border-color: var(--lib-accent);
+}
+
+.package-thumb img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+.bg-lib-primary {
+   background-color: var(--lib-primary) !important;
+}
+
+.bg-lib-dark {
+   background-color: var(--lib-primary-dark) !important;
+}
+
+.bg-lib-light {
+   background-color: var(--lib-light-bg) !important;
+}
+
+.text-lib-primary {
+   color: var(--lib-primary) !important;
+}
+
+.text-lib-accent {
+   color: var(--lib-accent) !important;
+}
+
+/* Botón de WhatsApp estilizado */
+.btn-whatsapp {
+   background-color: #25D366;
+   color: #FFFFFF;
+   font-weight: 600;
+   border: none;
+   transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+   background-color: #1EBE5D;
+   color: #FFFFFF;
+   transform: translateY(-2px);
+   box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+}
+
+.badge-lib-accent {
+   background-color: var(--lib-accent);
+   color: #152460;
+   font-weight: 700;
+}
+
+/* Tarjetas de Servicios y Banners con Hover Elevable */
+.card-service {
+   border: 1px solid var(--lib-border);
+   border-radius: 1rem;
+   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card-service:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 12px 24px rgba(28, 48, 126, 0.08) !important;
+   border-color: #CBD5E1;
+}
+
+/* Caja de Ícono Circular */
+.icon-box {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background-color: var(--lib-light-bg);
+   color: var(--lib-primary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.5rem;
+   transition: all 0.3s ease;
+}
+
+.card-service:hover .icon-box {
+   background-color: var(--lib-primary);
+   color: #FFFFFF;
+}
+
+.border-left-lib {
+   border-left: 4px solid var(--lib-accent) !important;
+}
+
+.doctor-img-container {
+   border-radius: 1rem;
+   overflow: hidden;
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.separator-line {
+   width: 60px;
+   height: 4px;
+   background-color: var(--lib-accent);
+   border-radius: 2px;
+}
+
+/* Ajustes exclusivos de Densitometría; reutiliza styles_secciones.css */
+.dxa-hero { background: linear-gradient(115deg, #1C307E 0%, #152460 66%, #233c92 100%); color: #fff; border-bottom: 4px solid var(--lib-accent, #FBB635); }
+.dxa-hero-panel { background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.22); border-radius: 1.25rem; backdrop-filter: blur(5px); }
+.dxa-section-kicker { color: var(--lib-primary, #1C307E); font-size: .78rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.dxa-price { color: var(--lib-primary, #1C307E); font-weight: 800; font-size: 1.8rem; }
+.dxa-feature { border-left: 4px solid var(--lib-accent, #FBB635); border-radius: 0 1rem 1rem 0; }
+.dxa-list { padding-left: 0; list-style: none; }
+.dxa-list li { display: flex; gap: .65rem; margin-bottom: .85rem; color: #536174; }
+.dxa-list li .bi { color: var(--lib-primary, #1C307E); flex-shrink: 0; }
+.dxa-step { width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; display: grid; place-items: center; background: rgba(28,48,126,.09); color: var(--lib-primary, #1C307E); font-weight: 800; }
+.dxa-main-photo { width: 100%; max-height: 420px; object-fit: contain; background: #fff; }
+.dxa-promo { display: block; background: #fff; border: 1px solid #E2E8F0; border-radius: 1rem; overflow: hidden; height: 100%; transition: transform .25s, box-shadow .25s; }
+.dxa-promo:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(28,48,126,.12); }
+.dxa-promo img { width: 100%; height: auto; display: block; }
+.dxa-anchor { scroll-margin-top: 85px; }
+@media (max-width: 767.98px) { .dxa-price { font-size: 1.55rem; } }

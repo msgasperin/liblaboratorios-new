@@ -1,0 +1,514 @@
+:root {
+      --azul-lib: #1C307E;
+      --azul-hover: #14235E;
+      --amarillo-lib: #FBB635;
+      --amarillo-hover: #e5a329;
+      --bg-light: #F8FAFC;
+      --text-dark: #1E293B;
+      --border-color: #E2E8F0;
+}
+
+body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-dark);
+      background-color: #ffffff;
+      overflow-x: hidden;
+}
+
+/* Clases de Identidad de Marca */
+.bg-med-blue { background-color: var(--azul-lib) !important; }
+.bg-med-yellow { background-color: var(--amarillo-lib) !important; }
+.bg-med-light { background-color: #EEF2FF !important; }
+.text-med-blue { color: var(--azul-lib) !important; }
+.text-med-yellow { color: var(--amarillo-lib) !important; }
+
+.btn-med-blue {
+      background-color: var(--azul-lib);
+      color: #ffffff;
+      border: none;
+}
+.btn-med-blue:hover {
+      background-color: var(--azul-hover);
+      color: #ffffff;
+}
+
+.btn-med-yellow {
+      background-color: var(--amarillo-lib);
+      color: var(--azul-lib);
+      font-weight: 700;
+      border: none;
+}
+.btn-med-yellow:hover {
+      background-color: var(--amarillo-hover);
+      color: var(--azul-lib);
+}
+
+/* Top Bar */
+.top-bar {
+      background-color: #0F1A48;
+      font-size: 0.85rem;
+}
+.top-bar a {
+      color: #E2E8F0;
+      text-decoration: none;
+      transition: color 0.2s ease;
+}
+.top-bar a:hover {
+      color: var(--amarillo-lib);
+}
+
+/* Header Nav Desktop */
+.navbar-brand img {
+      max-height: 55px;
+      width: auto;
+}
+.main-nav .nav-link {
+      color: var(--azul-lib);
+      font-weight: 600;
+      padding: 0.75rem 1rem !important;
+      transition: all 0.2s ease;
+}
+.main-nav .nav-link:hover, .main-nav .nav-link.active {
+      color: var(--amarillo-lib);
+}
+.dropdown-menu {
+      border-radius: 0.75rem;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+.dropdown-item:hover {
+      background-color: #EEF2FF;
+      color: var(--azul-lib);
+}
+
+/* Offcanvas Móvil Full Screen (4/4 Ancho) */
+.offcanvas-mobile-full {
+      width: 100% !important;
+      max-width: 100% !important;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+      .offcanvas-mobile-full {
+         width: 85% !important;
+      }
+}
+
+/* Cards Generales */
+.card-medicina-laboral {
+      border: 1px solid #E2E8F0;
+      border-radius: 1.25rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-medicina-laboral:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(28, 48, 126, 0.1) !important;
+}
+
+.icon-circle-lg {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #EEF2FF;
+      color: var(--azul-lib);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+}
+
+.list-med-services li {
+      padding: 0.4rem 0;
+      border-bottom: 1px dashed #E2E8F0;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+}
+.list-med-services li::before {
+      content: "\F26E";
+      font-family: "bootstrap-icons";
+      color: var(--amarillo-lib);
+      font-weight: bold;
+      margin-right: 0.6rem;
+}
+
+/* Card Promociones (867x867) */
+.promo-card {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      background-color: #fff;
+}
+.promo-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+.promo-card img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+}
+
+/* Sustentabilidad Cards */
+.sustentable-card {
+      border-radius: 1rem;
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      transition: all 0.25s ease;
+}
+.sustentable-card:hover {
+      border-color: var(--azul-lib);
+      background-color: #EEF2FF;
+}
+
+/* Botón Flotante WhatsApp */
+.btn-whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      z-index: 1050;
+      transition: all 0.3s ease;
+      text-decoration: none;
+}
+.btn-whatsapp-float:hover {
+      color: white;
+      transform: scale(1.1);
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+.title-accent-line {
+      width: 80px;
+      height: 4px;
+      background-color: var(--amarillo-lib);
+      margin: 0.75rem auto;
+      border-radius: 2px;
+}
+
+
+/* --- Estilos para la sección Slider (Banners 3000x1200) --- */
+#slider {
+    background: linear-gradient(180deg, #f0f4f8 0%, #e2e8f0 100%);
+    position: relative;
+}
+
+.slider-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.slider-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(28, 48, 126, 0.08);
+    border: 1px solid rgba(28, 48, 126, 0.08);
+    overflow: hidden;
+}
+
+.banner-img-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3000 / 1200; /* Respeta la proporción original 3000x1200 */
+    max-height: 520px;
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garantiza que la imagen de 3000x1200 se vea completa sin cortarse */
+    object-position: center;
+}
+
+/* Personalización de controles del slider */
+#slider .carousel-control-prev,
+#slider .carousel-control-next {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(28, 48, 126, 0.85);
+    color: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    transition: all 0.2s ease;
+}
+
+#slider .carousel-control-prev { left: 15px; }
+#slider .carousel-control-next { right: 15px; }
+
+#slider .carousel-control-prev:hover,
+#slider .carousel-control-next:hover {
+    background-color: #1C307E;
+    transform: translateY(-50%) scale(1.1);
+    opacity: 1;
+}
+
+#slider .carousel-indicators [data-bs-target] {
+    background-color: #1C307E;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+#slider .carousel-indicators .active {
+    background-color: #FBB635;
+    width: 24px;
+    border-radius: 10px;
+}
+
+/* Estilos de la modal de promoción */
+
+/* --- Modal Promocional de Bienvenida --- */
+.modal-promo .modal-content {
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(28, 48, 126, 0.2);
+    border: 1px solid rgba(28, 48, 126, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.modal-promo .btn-close-custom {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    background-color: #ffffff;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    color: #1C307E;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.modal-promo .btn-close-custom:hover {
+    background-color: #FBB635;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.modal-promo-video-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #000000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.modal-promo-banner-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-promo-banner-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ESTILOS MODAL SUCURSALES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* --- Modal de Sucursal con Imagen en Miniatura --- */
+.modal-sucursal .modal-content {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(28, 48, 126, 0.18);
+    border: 1px solid rgba(28, 48, 126, 0.08);
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.modal-sucursal .modal-header {
+    background: linear-gradient(135deg, #1C307E 0%, #152460 100%);
+    padding: 1.25rem 1.5rem;
+    position: relative;
+}
+
+.modal-sucursal .modal-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.modal-sucursal .modal-title i {
+    color: #FBB635;
+}
+
+.modal-sucursal .btn-close-white-custom {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.modal-sucursal .btn-close-white-custom:hover {
+    background-color: #FBB635;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+/* Miniatura complementaria para la foto de sucursal */
+.sucursal-thumb {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #f8fafc;
+    flex-shrink: 0;
+}
+
+.sucursal-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 1.2rem;
+}
+
+.sucursal-icon-box {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: rgba(28, 48, 126, 0.08);
+    color: #1C307E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.sucursal-map-wrapper {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.sucursal-map-wrapper iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+}
+
+.btn-lib-primary {
+    background-color: var(--azul-lib) !important;
+    color: #fff;
+}
+
+.btn-lib-primary:hover {
+    background-color: var(--azul-hover) !important;
+    color: #fff;
+}
+
+.btn-whatsapp-sucursal {
+    background-color: #25D366;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 50rem;
+    padding: 0.6rem 1.25rem;
+    transition: all 0.2s ease;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.btn-whatsapp-sucursal:hover {
+    background-color: #1eb956;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ESTILOS MODAL VISOR DOCUMENTOS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* --- Modal Visor de Documentos PDF --- */
+.modal-pdf .modal-content {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(28, 48, 126, 0.22);
+    border: 1px solid rgba(28, 48, 126, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.modal-pdf .modal-header {
+    background: linear-gradient(135deg, #1C307E 0%, #152460 100%);
+    padding: 1rem 1.5rem;
+}
+
+.modal-pdf .modal-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.modal-pdf .btn-close-white-custom {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.modal-pdf .btn-close-white-custom:hover {
+    background-color: #FBB635;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.pdf-viewer-container {
+    position: relative;
+    width: 100%;
+    height: 75vh; /* Ocupa el 75% de la altura de la pantalla */
+    background-color: #f8fafc;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

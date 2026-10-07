@@ -1,0 +1,32 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^inicio index.php
+
+RewriteRule ^v2/pages/cardiologia v2/pages/cardiologia.php
+RewriteRule ^v2/pages/neumologia v2/pages/neumologia.php
+RewriteRule ^v2/pages/ultrasonidos v2/pages/ultrasonidos.php
+RewriteRule ^v2/pages/densitometria v2/pages/densitometria.php
+RewriteRule ^v2/pages/analisis v2/pages/analisis.php
+RewriteRule ^v2/pages/rayos-x v2/pages/rayos-x.php
+RewriteRule ^v2/pages/fibroscan v2/pages/fibroscan.php
+
+# ── Headers de seguridad HTTP ────────────────────────────────
+<IfModule mod_headers.c>
+
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+    Header always set Content-Security-Policy "\
+        default-src 'self'; \
+        script-src 'self' 'unsafe-inline' 'unsafe-eval'; \
+        style-src 'self' 'unsafe-inline'; \
+        img-src 'self' data:; \
+        font-src 'self'; \
+        connect-src 'self'; \
+        frame-src 'self' blob: https://www.google.com; \
+        frame-ancestors 'self';"
+</IfModule>
+# ─────────────────────────────────────────────────────────────
