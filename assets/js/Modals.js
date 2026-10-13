@@ -33,7 +33,7 @@ const ModalIni = () => {
                      <!-- Lado Derecho: Imagen Banner Horizontal -->
                      <div class="col-lg-6">
                         <div class="modal-promo-banner-wrapper p-2">
-                           <img src="assets/images/unidad_neumologia.webp" class="img-fluid" alt="Unidad de neumología">
+                           <img src="assets/images/seccion/neumologia/estudio_sueno.webp" class="img-fluid" alt="Estudio del sueño">
                         </div>
                      </div>
 

@@ -10,10 +10,10 @@
         <title>Lib Laboratorios | Tu laboratorio de confianza</title>
         <meta name="description" content="Lib Laboratorios, análisis clínicos de rutina, alta y gran especialidad en Veracruz.">
 
-        <link href="assets/lib/bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet">       
-        <link href="assets/lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet">
-        <link href="assets/lib/sweetAlert2/sweetalert2.min.css" rel="stylesheet" />
-        <link href="assets/css/styles.css?<?= $time; ?>" rel="stylesheet" />
+        <link href="/assets/lib/bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet">       
+        <link href="/assets/lib/bootstrap-icons-1.13.1/bootstrap-icons.min.css" rel="stylesheet">
+        <link href="/assets/lib/sweetAlert2/sweetalert2.min.css" rel="stylesheet" />
+        <link href="/assets/css/styles.css?<?= $time; ?>" rel="stylesheet" />
     </head>
     <body onload="ModalIni();">
 
@@ -24,17 +24,31 @@
                 <div class="slider-card">
                     <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Paquete cardiológico LIB"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Paquete femenino"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Unidad de rayos X"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Paquete fibroscan"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4" aria-label="Control hipertensión / Diabétes"></button>
-                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="5" aria-label="Paquete salus ósea"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Estudio del sueño"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Pruebas únicas LIB"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Paquete cardiológico LIB"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Paquete femenino"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4" aria-label="Unidad de rayos X"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="5" aria-label="Paquete fibroscan"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="6" aria-label="Control hipertensión / Diabétes"></button>
+                            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="7" aria-label="Paquete salus ósea"></button>
                         </div>
 
                         <div class="carousel-inner">
 
                             <div class="carousel-item active">
+                                <div class="banner-img-wrapper">
+                                    <img src="assets/images/slider/estudio_sueno.webp?<?= $time; ?>" class="d-block" alt="Estudio del sueño">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="banner-img-wrapper">
+                                    <img src="assets/images/slider/pruebas_unicas_lib.webp?<?= $time; ?>" class="d-block" alt="Pruebas únicas LIB">
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
                                 <div class="banner-img-wrapper">
                                     <img src="assets/images/slider/paquete_cardiologico.webp?<?= $time; ?>" class="d-block" alt="Paquete cardiológico LIB">
                                 </div>

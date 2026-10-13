@@ -339,7 +339,7 @@
       <div class="row g-4">
         <div class="col-lg-3 col-md-6">
           <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 card-service">
-            <img src="/assets/images/seccion/neumologia/estudios_1.webp" class="img-fluid w-100" alt="Estudios de Neumología">
+            <img src="/assets/images/seccion/neumologia/estudio_sueno.webp" class="img-fluid w-100" alt="Estudios de Neumología">
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
